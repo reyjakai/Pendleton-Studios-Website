@@ -1,0 +1,65 @@
+html {
+  background-color: #007BA7;
+  font-family: 'Merriweather', serif;
+  margin-left: 15%;
+  margin-right: 15%;
+  width: auto;
+  height: auto;
+  background-size: cover;
+}
+
+body{
+  position: relative;
+}
+
+hr {
+  width: 80%;
+  height: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  color: pink;
+}
+
+nav {
+  box-shadow: 0px 0px 3px black;
+}
+
+.contact-information{
+  font-size: 15px;
+}
+
+.header {
+  padding-left: 5%;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.job-title {
+  padding-left: 5%;
+  font-weight: bold;
+  font-size: 15px;
+  font-family: Merriweather;
+}
+
+.job-date {
+  padding-left: 6%;
+  font-style: italic;
+  font-size: 15px;
+  font-family: Merriweather;
+}
+
+.name {
+  font-size: 75px;
+  font-family: Merriweather;
+}
+
+.skills-list {
+  margin-left: 10%;
+  font-family: Merriweather;
+}
+
+.title {
+  font-size: 15px;
+  font-weight: bold;
+  font-family: Merriweather;
+}
