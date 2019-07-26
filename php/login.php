@@ -37,6 +37,6 @@ echo "Redirecting...";
 
 <html>
 <head>
-<meta http-equiv="refresh" content="2;url=http://pendletonstudios.com/access.html">
+<meta http-equiv="refresh" content="2;url=https://pendletonstudios.com/access.html">
 </head>
 </html>

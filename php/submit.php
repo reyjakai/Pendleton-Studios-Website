@@ -14,6 +14,6 @@ echo "Redirecting...";
 
 <html>
 <head>
-<meta http-equiv="refresh" content="2;url=http://pendletonstudios.com/contact.html">
+<meta http-equiv="refresh" content="2;url=https://pendletonstudios.com/contact.html">
 </head>
 </html>
