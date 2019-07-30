@@ -6,6 +6,11 @@
 
   <link rel="stylesheet" type="text/css" href="css/index.css" media="screen" />
   <script src="https://kit.fontawesome.com/96ed577a50.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <!-- Loading in the javascript for the site. Loads in main first, then the elements. -->
+  <script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript" src="js/character.js"></script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-79507513-4"></script>
@@ -19,7 +24,7 @@
 </head>
 
 <body>
-
+  <div id='overlay'></div>
   <div id='background-container'>
     <img id='forest-background' src='images/Forest Background.png'>
     <div id='page-container'>
@@ -28,6 +33,7 @@
         <img id='red-house' class='behind-player' src='images/red house.png'>
         <img id='green-house' class='behind-player' src='images/green house.png'>
         <img id='left-lonely-tree' class='behind-player' src='images/sad lonely tree.png'>
+        <img id='player' onmouseover="animateScript()">
         <img id='forest-bottom' class='in-front-of-player' src='images/forest in front.png'>
         <img id='right-lonely-tree' class='in-front-of-player' src='images/sad lonely tree.png'>
     </div>

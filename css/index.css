@@ -2,11 +2,15 @@ html, body {
   background-color: #86B858;
   height: 100%;
   margin: 0;
+
+  overflow: hidden;
 }
 
 #background-container {
   display: inline-block;
   position: relative;
+  top: -50px;
+  left: -328px;
 }
 
 #background-container img {
@@ -40,14 +44,34 @@ html, body {
   left: 242px !important;
 }
 
+#green-house {
+  top: 171px !important;
+  left: 1702px !important;
+}
+
 #red-house {
   top: -221px !important;
   left: 890px !important;
 }
 
-#green-house {
-  top: 171px !important;
-  left: 1702px !important;
+#player {
+  height: 192px;
+  width: 96px;
+  top: 600px !important;
+  left: 900px !important;
+
+  z-index: 2;
+  background: url(../images/DP3.png) 0px 0px;
+}
+
+#overlay {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  z-index: 10;
+  background-color: rgba(0, 0, 0, .5);
 }
 
 .behind-player {
