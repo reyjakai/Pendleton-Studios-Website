@@ -24,8 +24,11 @@
 </head>
 
 <body>
+  <div id="site-container">
+
+  </div>
   <div id='overlay'></div>
-  <div id='background-container'>
+  <div id='game-container'>
     <img id='forest-background' src='images/Forest Background.png'>
     <div id='page-container'>
         <img id='forest-top' class='behind-player' src='images/forest in back.png'>
@@ -33,7 +36,7 @@
         <img id='red-house' class='behind-player' src='images/red house.png'>
         <img id='green-house' class='behind-player' src='images/green house.png'>
         <img id='left-lonely-tree' class='behind-player' src='images/sad lonely tree.png'>
-        <img id='player' onmouseover="animateScript()">
+        <img id='player' onmouseover="animateScript()" onmouseout="stopAnimate()">
         <img id='forest-bottom' class='in-front-of-player' src='images/forest in front.png'>
         <img id='right-lonely-tree' class='in-front-of-player' src='images/sad lonely tree.png'>
     </div>
