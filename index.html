@@ -6,13 +6,15 @@
 
   <link href="https://fonts.googleapis.com/css?family=Aldrich&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/index.css" media="screen" />
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
   <script src="https://kit.fontawesome.com/96ed577a50.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
   <!-- Loading in the javascript for the site. Loads in main first, then the elements. -->
-  <script type="text/javascript" src="js/index.js"></script>
   <script type="text/javascript" src="js/character.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+  
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-79507513-4"></script>
@@ -25,7 +27,7 @@
   </script>
 </head>
 
-<body>
+<body onkeydown="keyPress(event)" onkeyup="keyRelease(event)">
   <div id="site-container">
     <header>
       <nav id='header-nav'>
@@ -44,18 +46,24 @@
     </header>
   </div>
 
-  <div id='overlay'></div>
+  <div id='overlay'>
+    <div id="introduction">
+      <h1>Adam Weaver</h1>
+      <span>Developer. Musician. Master of Space and Time.</span>
+    </div>
+    <img src="images/wasd-to-move.png">
+  </div>
   <div id='game-container'>
     <img id='forest-background' src='images/Forest Background.png'>
     <div id='page-container'>
-        <img id='forest-top' class='behind-player' src='images/forest in back.png'>
-        <img id='blue-house' class='behind-player' src='images/blue house.png'>
-        <img id='red-house' class='behind-player' src='images/red house.png'>
-        <img id='green-house' class='behind-player' src='images/green house.png'>
-        <img id='left-lonely-tree' class='behind-player' src='images/sad lonely tree.png'>
-        <img id='player' onmouseover="animateScript()" onmouseout="stopAnimate()">
-        <img id='forest-bottom' class='in-front-of-player' src='images/forest in front.png'>
-        <img id='right-lonely-tree' class='in-front-of-player' src='images/sad lonely tree.png'>
+      <img id='forest-top' class='behind-player' src='images/forest in back.png'>
+      <img id='blue-house' class='behind-player' src='images/blue house.png'>
+      <img id='red-house' class='behind-player' src='images/red house.png'>
+      <img id='green-house' class='behind-player' src='images/green house.png'>
+      <img id='left-lonely-tree' class='behind-player' src='images/sad lonely tree.png'>
+      <p id='player'></p>
+      <img id='forest-bottom' class='in-front-of-player' src='images/forest in front.png'>
+      <img id='right-lonely-tree' class='in-front-of-player' src='images/sad lonely tree.png'>
     </div>
   </div>
 </body>

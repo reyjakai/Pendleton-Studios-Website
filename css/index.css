@@ -64,6 +64,21 @@ nav ul {
 	)
 }
 
+#introduction {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 100%;
+  margin-top: 15%;
+  color: white;
+}
+
+#introduction :nth-child(1), #introduction :nth-child(2) {
+  margin: 20px auto;
+}
+
 #game-container {
   display: inline-block;
   position: relative;
@@ -113,10 +128,12 @@ nav ul {
 }
 
 #player {
+  position: absolute;
+
   height: 192px;
   width: 96px;
-  top: 600px !important;
-  left: 900px !important;
+  top: 600px;
+  left: 900px;
 
   z-index: 2;
   background: url(../images/DP3.png) 0px 0px;
@@ -129,6 +146,12 @@ nav ul {
 
   z-index: 4;
   background-color: rgba(0, 0, 0, .5);
+}
+
+#overlay img {
+  position: absolute;
+  bottom: 3%;
+  left: 2%;
 }
 
 .behind-player {

@@ -8,23 +8,24 @@ const positionInterval = totalWidth / numRows;
 
 const initialInterval = 150;
 
-let tID;
+let interval = null;
 
 function animateScript() {
     let position = initialPosition;
-    const interval = initialInterval;
 
-    tID = setInterval( () => {
-        document.getElementById("player").style.backgroundPosition = `-${position}px 0px`;
-        if (position < totalWidth) {
-            position += positionInterval;
-        } else {
-            position = positionInterval;
-        }
-    }, initialInterval);
+    if(!interval) {
+        interval = setInterval( () => {
+            $("#player").css('background-position', `-${position}px 0px`);
+            if (position < totalWidth) {
+                position += positionInterval;
+            } else {
+                position = positionInterval;
+            }
+        }, initialInterval);
+    }
 }
 
 function stopAnimate() {
     position = initialPosition;
-    clearInterval(tID);
+    clearInterval(interval);
 }
