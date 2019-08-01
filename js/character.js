@@ -7,15 +7,16 @@ const initialPosition = (totalWidth / numRows) * 2;
 const positionInterval = totalWidth / numRows;
 
 const initialInterval = 150;
-
 let interval = null;
+let lastDirection;
 
-function animateScript() {
+function animatePlayer(direction) {
     let position = initialPosition;
 
     if(!interval) {
         interval = setInterval( () => {
-            $("#player").css('background-position', `-${position}px 0px`);
+            $("#player").css('background-position', `-${position}px ${direction}px`);
+            lastDirection = direction;
             if (position < totalWidth) {
                 position += positionInterval;
             } else {
@@ -26,6 +27,10 @@ function animateScript() {
 }
 
 function stopAnimate() {
-    position = initialPosition;
-    clearInterval(interval);
+    if(interval) {
+        position = initialPosition;
+        $("#player").css('background-position', `-${position}px ${lastDirection}px`);
+        clearInterval(interval);
+        interval = null;
+    }
 }

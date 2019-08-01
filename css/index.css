@@ -99,6 +99,11 @@ nav ul {
   left: 0;
 }
 
+#escape {
+  top: 2% !important;
+  opacity: 0;
+}
+
 #page-container img {
   position: absolute;
 }
@@ -120,22 +125,38 @@ nav ul {
 }
 
 #blue-house {
+  height: 480px;
   top: 153px !important;
   left: 242px !important;
 }
 
+#blue-house p {
+  top: 45%;
+}
+
 #green-house {
+  height: 472px;
   top: 171px !important;
   left: 1702px !important;
 }
 
+#green-house p {
+  top: 45%;
+}
+
 #red-house {
+  height: 663px;
   top: -221px !important;
   left: 890px !important;
 }
 
+#red-house p {
+  top: 60%;
+}
+
 #player {
   position: absolute;
+  pointer-events: none;
 
   height: 192px;
   width: 96px;
@@ -150,7 +171,6 @@ nav ul {
   position: absolute;
   width: 100%;
   height: 100%;
-
   z-index: 4;
   background-color: rgba(0, 0, 0, .5);
 }
@@ -176,6 +196,40 @@ nav ul {
 .fa-twitter {
 	color: white;
 	vertical-align: middle;
+}
+
+.door {
+  opacity: 0;
+  top: unset !important;
+  left: unset !important;
+  bottom: 0;
+  z-index: 2;
+}
+
+.door:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.house {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 616px;
+}
+
+.house a {
+  width: 96px;
+  height: 168px;
+}
+
+.house-text {
+  position: absolute;
+  color: white;
+  z-index: 2;
+  font-size: 1.6vw;
+  line-height: 1.6vw;
 }
 
 .in-front-of-player {

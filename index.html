@@ -11,9 +11,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
   <!-- Loading in the javascript for the site. Loads in main first, then the elements. -->
+  <script type="text/javascript" src="js/game.js"></script>
   <script type="text/javascript" src="js/character.js"></script>
-  <script type="text/javascript" src="js/index.js"></script>
-  
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-79507513-4"></script>
@@ -26,7 +25,7 @@
   </script>
 </head>
 
-<body onkeydown="startGame()">
+<body>
   <div id="site-container">
     <header>
       <nav id='header-nav'>
@@ -48,7 +47,7 @@
   <div id='overlay'>
     <div id="introduction">
       <h1>Adam Weaver</h1>
-      <span>Developer. Musician. Master of Space and Time.</span>
+      <span>Developer. Musician. Master of the Galaxy.</span>
     </div>
     <img src="images/wasd-to-move.png">
     <span id="under-construction">Under Construction! A lot of things will not work.</span>
@@ -56,12 +55,30 @@
 
   <div id='game-container'>
     <img id='forest-background' src='images/Forest Background.png'>
-    <button id="open-menu">Open Menu</button>
     <div id='page-container'>
       <img id='forest-top' class='behind-player' src='images/forest in back.png'>
-      <img id='blue-house' class='behind-player' src='images/blue house.png'>
-      <img id='red-house' class='behind-player' src='images/red house.png'>
-      <img id='green-house' class='behind-player' src='images/green house.png'>
+      <div id='blue-house' class='house'>
+        <img class='behind-player' src='images/blue house.png'>
+        <a href='#' class='active'>
+          <img class='door' src='images/door.png'>
+        </a>
+        <p class='house-text'>Home</p>
+        <p id='escape' class='house-text'>Press Escape to quit.</p>
+      </div>
+      <div id='red-house' class='house'>
+        <img class='behind-player' src='images/red house.png'>
+        <a href='portfolio.html'>
+          <img class='door' src='images/door.png'>
+        </a>
+        <p class='house-text'>Portfolio</p>
+      </div>
+      <div id='green-house' class='house'>
+        <img class='behind-player' src='images/green house.png'>
+        <a href='download/Adam-Weaver-Resume.pdf' download>
+          <img class='door' src='images/door.png'>
+        </a>
+        <p class='house-text'>Resume</p>
+      </div>
       <img id='left-lonely-tree' class='behind-player' src='images/sad lonely tree.png'>
       <p id='player'></p>
       <img id='forest-bottom' class='in-front-of-player' src='images/forest in front.png'>
