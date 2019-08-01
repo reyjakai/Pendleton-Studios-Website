@@ -4,7 +4,9 @@
   <meta name="description" content="Adam Weaver's Portfolio Website.">
   <title>Pendleton Studios</title>
 
+  <link href="https://fonts.googleapis.com/css?family=Aldrich&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/index.css" media="screen" />
+
   <script src="https://kit.fontawesome.com/96ed577a50.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
@@ -25,23 +27,23 @@
 
 <body>
   <div id="site-container">
-    <div id='nav-container'>
-      <nav>
+    <header>
+      <nav id='header-nav'>
         <ul>
-          <li>
-            Home
+          <li id='home-button' class='nav-button'>
+            <a href='#' class='active'>Home</a>
           </li>
-          <li>
-            Portfolio
+          <li id='portfolio-button' class='nav-button'>
+            <a href='portfolio.html'>Portfolio</a>
           </li>
-          <li>
-            Resume
+          <li id='resume-button' class='nav-button'>
+            <a href='download/Adam-Weaver-Resume.pdf' download>Resume</a>
           </li>
         </ul>
       </nav>
-    </div>
-
+    </header>
   </div>
+
   <div id='overlay'></div>
   <div id='game-container'>
     <img id='forest-background' src='images/Forest Background.png'>

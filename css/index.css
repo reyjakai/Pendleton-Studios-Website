@@ -3,26 +3,72 @@ html, body {
   height: 100%;
   margin: 0;
 
+  font-size: 1.4vw;
+  line-height: 1.4vw;
+  font-family: 'Aldrich', sans-serif;
+
   overflow: hidden;
 }
 
-#site-container {
-  position: relative;
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	text-decoration: none;
 }
 
-#nav-container {
-  position: absolute;
-  width: 100%;
-  height: 5%;
+li a:hover {
+	color: grey;
+}
 
-  background: #86B858;
+li a.active {
+	color: grey;
+}
+
+nav ul {
+  max-width: 64%;
+
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+	
+	list-style-type: none;
+  padding-inline-start: 0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#site-container {
+  z-index: 5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#header-nav {
+	margin: 0;
+	z-index: 100;
+	background-image: linear-gradient(
+		rgb(3, 3, 3) 0%,
+		rgb(131, 16, 0) 1%, 
+		rgb(236, 202, 104) 30%, 
+		rgb(236, 202, 104) 70%, 
+		rgb(131, 16, 0) 99%,
+		rgb(3, 3, 3) 100%
+	)
 }
 
 #game-container {
   display: inline-block;
   position: relative;
-  top: -50px;
-  left: -328px;
+  top: -20px;
+  left: -250px;
 }
 
 #game-container img {
@@ -77,12 +123,11 @@ html, body {
 }
 
 #overlay {
-  display: none;
   position: absolute;
   width: 100%;
   height: 100%;
 
-  z-index: 10;
+  z-index: 4;
   background-color: rgba(0, 0, 0, .5);
 }
 
@@ -90,6 +135,15 @@ html, body {
   z-index: 1;
 }
 
+.fa-twitter {
+	color: white;
+	vertical-align: middle;
+}
+
 .in-front-of-player {
   z-index: 3;
+}
+
+.nav-button {
+	padding: 1%;
 }
